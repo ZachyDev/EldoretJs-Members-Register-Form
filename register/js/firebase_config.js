@@ -40,7 +40,18 @@ const getInputValues = (id) => {
 }
 
 // saveInfoToFirebase
-const saveInfoToFirebase = (name,email,gender,level,gitHub,linkedIn,twitter,phone,status) => {
+const saveInfoToFirebase = (name,email,gender,level,gitHub,linkedIn,twitter,phone,stack) => {
     const pushToFirebase = registerRef.push();
     // set the info to an object
+    pushToFirebase.set({
+        name,
+        email,
+        gender,
+        level,
+        gitHub,
+        linkedIn,
+        twitter,
+        phone,
+        stack
+    })
 }
