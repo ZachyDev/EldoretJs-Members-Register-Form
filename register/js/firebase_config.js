@@ -32,6 +32,9 @@ function registerUser(e){
     let phone = getInputValues('phone');
     let stack = getInputValues('stack');
 
+    // saveInfoToFirebase
+    saveInfoToFirebase(name,email,gender,level,gitHub,linkedIn,twitter,phone,stack);
+
     
 }
 // get the form inputs
