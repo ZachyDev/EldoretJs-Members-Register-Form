@@ -23,10 +23,24 @@ function registerUser(e){
 
     // getInputValues
     let name = getInputValues('name');
- 
+    let email = getInputValues('email');
+    let gender = getInputValues('gender');
+    let level = getInputValues('level');
+    let gitHub= getInputValues('git_user');
+    let linkedIn = getInputValues('linked_user');
+    let twitter = getInputValues('twitter_user');
+    let phone = getInputValues('phone');
+    let stack = getInputValues('stack');
+
     
 }
 // get the form inputs
 const getInputValues = (id) => {
     return document.getElementById(id).value;
+}
+
+// saveInfoToFirebase
+const saveInfoToFirebase = (name,email,gender,level,gitHub,linkedIn,twitter,phone,status) => {
+    const pushToFirebase = registerRef.push();
+    // set the info to an object
 }
