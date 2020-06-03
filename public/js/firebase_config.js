@@ -25,15 +25,13 @@ function registerUser(e){
     let name = getInputValues('name');
     let email = getInputValues('email');
     let gender = getInputValues('gender');
-    let level = getInputValues('level');
     let gitHub= getInputValues('git_user');
     let linkedIn = getInputValues('linked_user');
-    let twitter = getInputValues('twitter_user');
     let phone = getInputValues('phone');
     let stack = getInputValues('stack');
 
     // saveInfoToFirebase
-    saveInfoToFirebase(name,email,gender,level,gitHub,linkedIn,twitter,phone,stack);
+    saveInfoToFirebase(name,email,gender,gitHub,linkedIn,phone,stack);
 
     // show alert
     document.querySelector('.alert').style.display = 'block';
@@ -41,7 +39,9 @@ function registerUser(e){
     // hide alert after 3.5 seconds
     setTimeout(() => {
         document.querySelector('.alert').style.display = 'none';
-    },3500)
+        window.open('https://eldoretjavascript.netlify.com');
+    },4500)
+ 
 
     
 }
@@ -51,18 +51,17 @@ const getInputValues = (id) => {
 }
 
 // saveInfoToFirebase
-const saveInfoToFirebase = (name,email,gender,level,gitHub,linkedIn,twitter,phone,stack) => {
+const saveInfoToFirebase = (name,email,gender,gitHub,linkedIn,
+    phone,stack) => {
     const pushToFirebase = registerRef.push();
     // set the info to an object
     pushToFirebase.set({
         name,
         email,
         gender,
-        level,
         gitHub,
-        linkedIn,
-        twitter,
         phone,
+        linkedIn,
         stack
     })
 }
