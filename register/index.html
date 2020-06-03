@@ -33,24 +33,24 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Registration Info</h2>
+                    <!-- form -->
                     <form id="submitUser">
                         <div class="input-group">
                             <!-- Name -->
-                            <input class="input--style-1" type="text" placeholder="NAME" name="name" required>
+                            <input class="input--style-1" type="text" placeholder="NAME" name="name" id="name">
                         </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <!-- BITRHDAY -->
-                                    <input class="input--style-1 js-datepicker" type="text" placeholder="BIRTHDATE- OPTIONAL" name="birthday">
-                                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    <!-- GMAIL-->
+                                    <input class="input--style-1 js-datepicker" type="text" placeholder="EMAIL ADDRESS" name="email" id="email">
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
                                         <!-- GENDER -->
-                                        <select name="gender" required>
+                                        <select name="gender" id="gender">
                                             <option disabled="disabled" selected="selected">GENDER</option>
                                             <option>Male</option>
                                             <option>Female</option>
@@ -65,7 +65,7 @@
                             <div class="rs-select2 js-select-simple select--no-search">
                                 <!-- LEVEL -->
                                 <select name="class">
-                                    <option disabled="disabled" selected="selected">Level</option>
+                                    <option disabled="disabled" selected="selected" id="level">Level</option>
                                     <option>Beginner</option>
                                     <option>Intermediate</option>
                                     <option>Advanced</option>
@@ -77,39 +77,38 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <!-- GITHUB USERNAME -->
-                                    <input class="input--style-1" type="text" placeholder="GITHUB USERNAME" name="res_code" required>
+                                    <input class="input--style-1" type="text" placeholder="GITHUB USERNAME" name="res_code" id="git_user">
                                 </div>
                             </div>
 
                             <div class="col-2">
                                 <div class="input-group">
                                     <!-- LINKEDIN USERNAME -->
-                                    <input class="input--style-1" type="text" placeholder="LINKEDIN USERNAME" name="res_code" required>
+                                    <input class="input--style-1" type="text" placeholder="LINKEDIN USERNAME" name="res_code" id="linked_user">
                                 </div>
                             </div>
 
                             <div class="col-2">
                                 <div class="input-group">
                                     <!-- TWITTER USERNAME -->
-                                    <input class="input--style-1" type="text" placeholder="TWITTER USERNAME" name="res_code" required>
+                                    <input class="input--style-1" type="text" placeholder="TWITTER USERNAME" name="res_code" id="twitter_user">
                                 </div>
                             </div>
 
                             <div class="col-2">
                                 <div class="input-group">
                                     <!-- PHONE NUMBER -->
-                                    <input class="input--style-1" type="text" placeholder="PHONE +254" name="res_code" >
+                                    <input class="input--style-1" type="text" placeholder="PHONE +254" name="res_code" id="phone" >
                                 </div>
                             </div>                          
                         </div>
                         <div class="input-group">
                             <div class="rs-select2 js-select-simple select--no-search">
                                 <!-- PREFERRED STACK -->
-                                <select name="class">
-                                    <option disabled="disabled" selected="selected">Level</option>
-                                    <option>Beginner</option>
-                                    <option>Intermediate</option>
-                                    <option>Advanced</option>
+                                <select name="class" id="stack" id="stack">
+                                    <option disabled="disabled" selected="selected">PREFERRED STACK</option>
+                                    <option>Front-End</option>
+                                    <option>Full-Stack</option>
                                 </select>
                                 <div class="select-dropdown"></div>
                             </div>
@@ -124,7 +123,7 @@
     </div>
 
     <!-- Firebase configuration script -->>
- <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase.js"></script>
     <!-- Jquery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <!-- Vendor JS-->
@@ -134,6 +133,7 @@
 
     <!-- Main JS-->
     <script src="js/global.js"></script>
+    <script src="js/firebase_config.js"></script>
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
