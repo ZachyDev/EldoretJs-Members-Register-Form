@@ -33,13 +33,15 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Registration Info</h2>
-                    <form>
+                    <form id="submitUser">
                         <div class="input-group">
+                            <!-- Name -->
                             <input class="input--style-1" type="text" placeholder="NAME" name="name" required>
                         </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
+                                    <!-- BITRHDAY -->
                                     <input class="input--style-1 js-datepicker" type="text" placeholder="BIRTHDATE- OPTIONAL" name="birthday">
                                     <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                 </div>
@@ -47,7 +49,8 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="gender">
+                                        <!-- GENDER -->
+                                        <select name="gender" required>
                                             <option disabled="disabled" selected="selected">GENDER</option>
                                             <option>Male</option>
                                             <option>Female</option>
@@ -60,6 +63,7 @@
                         </div>
                         <div class="input-group">
                             <div class="rs-select2 js-select-simple select--no-search">
+                                <!-- LEVEL -->
                                 <select name="class">
                                     <option disabled="disabled" selected="selected">Level</option>
                                     <option>Beginner</option>
@@ -72,13 +76,42 @@
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <input class="input--style-1" type="text" placeholder="GITHUB USERNAME" name="res_code" >
+                                    <!-- GITHUB USERNAME -->
+                                    <input class="input--style-1" type="text" placeholder="GITHUB USERNAME" name="res_code" required>
                                 </div>
                             </div>
+
                             <div class="col-2">
                                 <div class="input-group">
-                                    <input class="input--style-1" type="text" placeholder="LINKEDIN USERNAME" name="res_code" >
+                                    <!-- LINKEDIN USERNAME -->
+                                    <input class="input--style-1" type="text" placeholder="LINKEDIN USERNAME" name="res_code" required>
                                 </div>
+                            </div>
+
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <!-- TWITTER USERNAME -->
+                                    <input class="input--style-1" type="text" placeholder="TWITTER USERNAME" name="res_code" required>
+                                </div>
+                            </div>
+
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <!-- PHONE NUMBER -->
+                                    <input class="input--style-1" type="text" placeholder="PHONE +254" name="res_code" >
+                                </div>
+                            </div>                          
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <!-- PREFERRED STACK -->
+                                <select name="class">
+                                    <option disabled="disabled" selected="selected">Level</option>
+                                    <option>Beginner</option>
+                                    <option>Intermediate</option>
+                                    <option>Advanced</option>
+                                </select>
+                                <div class="select-dropdown"></div>
                             </div>
                         </div>
                         <div class="p-t-20">
