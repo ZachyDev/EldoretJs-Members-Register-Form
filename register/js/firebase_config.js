@@ -20,5 +20,13 @@ document.getElementById('submitUser').addEventListener('submit',registerUser);
 // registerUser function
 function registerUser(e){
     e.preventDefault();
-    alert('hello')
+
+    // getInputValues
+    let name = getInputValues('name');
+ 
+    
+}
+// get the form inputs
+const getInputValues = (id) => {
+    return document.getElementById(id).value;
 }
