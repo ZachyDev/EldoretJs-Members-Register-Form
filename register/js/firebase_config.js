@@ -38,10 +38,10 @@ function registerUser(e){
     // show alert
     document.querySelector('.alert').style.display = 'block';
 
-    // hide alert after 3 seconds
+    // hide alert after 3.5 seconds
     setTimeout(() => {
-        
-    })
+        document.querySelector('.alert').style.display = 'none';
+    },3500)
 
     
 }
