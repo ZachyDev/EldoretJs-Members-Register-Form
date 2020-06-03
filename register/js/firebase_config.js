@@ -35,6 +35,14 @@ function registerUser(e){
     // saveInfoToFirebase
     saveInfoToFirebase(name,email,gender,level,gitHub,linkedIn,twitter,phone,stack);
 
+    // show alert
+    document.querySelector('.alert').style.display = 'block';
+
+    // hide alert after 3 seconds
+    setTimeout(() => {
+        
+    })
+
     
 }
 // get the form inputs

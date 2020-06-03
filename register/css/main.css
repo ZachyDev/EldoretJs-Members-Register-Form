@@ -461,7 +461,7 @@ input {
   }
 }
 .alert{
-  background-color: #4dae3c;
+  background-color: #2ea719;
   padding: 10px;
   color: #fff;
   font-family: sans-serif;
@@ -469,4 +469,5 @@ input {
   margin-top: 10px;
   margin-bottom: 20px;
   border-radius: 7px;
+  display: none;
 }
